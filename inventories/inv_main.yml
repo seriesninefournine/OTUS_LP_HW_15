@@ -1,0 +1,12 @@
+all:
+  children:
+    nginx:
+  vars:
+    ansible_user: 'vagrant'
+ 
+nginx:
+  hosts:
+    nginx-01:
+      ansible_host: 127.0.0.1
+      ansible_port: 2222
+      ansible_ssh_private_key_file: /home/kukuruzzo/OTUS/OTUS_LP_HW_15/.vagrant/machines/nginx-01/virtualbox/private_key
